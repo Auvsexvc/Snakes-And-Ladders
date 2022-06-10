@@ -5,10 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Title="Snakes and Ladders" Height="auto" Width="800"
-        FontFamily="Ink free"
-        Foreground="White"
-        Background="DimGray"
+        FontFamily="Ink free Bold"
+        Foreground="Black"
+        
         WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="Assets/background.jpg"></ImageBrush>
+    </Window.Background>
 
     <Viewbox>
         <Grid>
@@ -23,7 +26,7 @@
             <StackPanel x:Name="CurrentPlayerPanel"
                     Grid.Column="0"
                     Orientation="Horizontal"
-                    HorizontalAlignment="Right"
+                    HorizontalAlignment="Left"
                     Margin="10">
                 <TextBlock  x:Name="CurrentPlayer"
                             Height="45"
@@ -59,6 +62,14 @@
                     Orientation="Vertical"
                     HorizontalAlignment="Center"
                     Margin="10">
+                <TextBlock  x:Name="Dice1"
+                            MinHeight="45"
+                            FontSize="32"
+                            VerticalAlignment="Center" />
+                <TextBlock  x:Name="Dice2"
+                            MinHeight="45"
+                            FontSize="32"
+                            VerticalAlignment="Center" />
                 <Button x:Name="RollDicesButton"
                         Content="Roll Dices"
                         Background="White"
@@ -79,14 +90,6 @@
                         Padding="0,0,0,5"
                         BorderBrush="Black"
                         Click="MoveClick" />
-                <TextBlock  x:Name="Dice1"
-                            Height="45"
-                            FontSize="32"
-                            VerticalAlignment="Center" />
-                <TextBlock  x:Name="Dice2"
-                            Height="45"
-                            FontSize="32"
-                            VerticalAlignment="Center" />
                 <TextBlock  x:Name="Dublet"
                             Text="Dublet! You've gained additional roll and move"
                             TextWrapping="Wrap"

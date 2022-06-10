@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\background.jpg" />
     <None Remove="Assets\Player1.png" />
     <None Remove="Assets\Player2.png" />
     <None Remove="Assets\shared.png" />
@@ -15,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\background.jpg" />
     <Resource Include="Assets\player1.png" />
     <Resource Include="Assets\player2.png" />
     <Resource Include="Assets\shared.png" />

@@ -7,7 +7,7 @@
         Title="Snakes and Ladders" Height="auto" Width="800"
         FontFamily="Ink free Bold"
         Foreground="Black"
-        
+
         WindowStartupLocation="CenterScreen">
     <Window.Background>
         <ImageBrush ImageSource="Assets/background.jpg"></ImageBrush>
@@ -113,8 +113,10 @@
             </Canvas>
 
             <Grid x:Name="EndScreen"
-              Grid.RowSpan="2"
-              Visibility="Hidden">
+                  Grid.RowSpan="2"
+                  Grid.ColumnSpan="2"
+                  Background="#CC000000"
+                  Visibility="Hidden">
                 <StackPanel Orientation="Vertical"
                         VerticalAlignment="Center">
                     <StackPanel Orientation="Horizontal"
@@ -125,7 +127,8 @@
                                VerticalAlignment="Center" />
                         <TextBlock x:Name="ResultText"
                                FontSize="54"
-                               Margin="0,0,0,15" />
+                               Margin="0,0,0,15"
+                               Foreground="White"/>
                     </StackPanel>
 
                     <Button Content="Reset"
